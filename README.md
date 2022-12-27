@@ -2,4 +2,4 @@
 Languages used Mostly Java,Python
 
 
-Question-1:-Longest Palindroe
+Question-1:-Longest Palindrome
