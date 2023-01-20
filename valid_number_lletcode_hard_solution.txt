@@ -1,0 +1,7 @@
+import java.util.regex.*;
+class Solution {
+    public boolean isNumber(String s) {
+        return Pattern.matches("^([+-]?(((\\d+\\.\\d*)|(\\.\\d+))|(\\d+))([eE][+-]?\\d+)?)$", s);
+    }
+    
+}
