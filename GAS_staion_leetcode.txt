@@ -1,0 +1,28 @@
+class Solution {
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        /*determine if there is a starting gas station in the first place*/
+       int  diff_total=0;
+       for( int i=0;i<gas.length;i++){
+           diff_total += gas[i] - cost[i];
+       }
+
+           if(diff_total<0){
+               return -1;
+           }  
+
+           /* if diff_total>=0*/
+
+           int starting=0,tank =0;
+           for( int i=0;i<gas.length;i++){
+               tank = tank + gas[i] -cost[i];
+               if(tank < 0){
+                   starting = i+1;
+                   tank =0;
+
+               }
+           }
+           return starting;
+
+       }
+        
+    }
