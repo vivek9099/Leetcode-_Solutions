@@ -4,3 +4,9 @@ SELECT
  FROM Employee AS a JOIN Employee AS b 
  ON a.ManagerID=b.ID
  AND a.Salary > b.Salary
+
+
+
+
+
+ I have knowledge of how to use these technologies to create and maintain Java-based applications.
